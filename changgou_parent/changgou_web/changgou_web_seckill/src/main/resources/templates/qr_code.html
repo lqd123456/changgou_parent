@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最强二维码生成工具</title>
+</head>
+<body>
+    <div id="qrcode"></div>
+</body>
+<script type="text/javascript" src="../static/js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/plugins/qrcode.min.js"></script>
+<script>
+    var qrcode = new QRCode('qrcode', {
+        text: 'www.baidu.com',
+        width: 256,
+        height: 256,
+        colorDark: '#000000',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+</html>
